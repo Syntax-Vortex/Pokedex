@@ -26,6 +26,7 @@ export function SideNav(props){
                 return(
                     <button className={'nav-card '+(first151Pokemon.indexOf(pokemon) === selectedPokemon? 'nav-card-selected' : '')} key={pokemonIndex} onClick={()=>{
                         setSelectedPokemon(first151Pokemon.indexOf(pokemon));
+                        toggleSideNav();
                     }}>
                         <p>{getFullPokedexNumber(first151Pokemon.indexOf(pokemon))}</p>
                         <p>{pokemon}</p>
